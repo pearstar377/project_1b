@@ -1,0 +1,277 @@
+html {
+  min-height: 100%;
+  background: #f6f6f5;
+}
+
+body {
+  position: relative;
+  isolation: isolate;
+  margin: 0;
+  background: transparent;
+  color: #625e56;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+body::before {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  background: url("img/background.jpg") center / cover no-repeat;
+  content: "";
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+h1,
+h2 {
+  font-family: Oswald, "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1,
+h2,
+p,
+blockquote {
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.home-page header {
+  max-width: 1180px;
+  margin: 0;
+  padding: 28px 30px;
+  background: #8079d8;
+  color: white;
+}
+
+.home-page h1 {
+  margin-bottom: 10px;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.home-page header p {
+  max-width: 700px;
+  margin-bottom: 0;
+}
+
+.home-page hr {
+  display: none;
+}
+
+.home-page main {
+  max-width: 1140px;
+  margin: 18px auto 56px;
+}
+
+.home-page main section:first-child {
+  max-width: 1060px;
+  margin-left: 20px;
+  padding: 14px 16px;
+  background: #d8e6fd;
+}
+
+.home-page h2,
+.article-page h2 {
+  color: #2478dc;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.home-page main section:first-child h2 {
+  margin-bottom: 6px;
+}
+
+.home-page main section:nth-child(2) {
+  max-width: 360px;
+  margin: 20px 0 0 20px;
+}
+
+.home-page main section:nth-child(2) h2 {
+  margin-left: 16px;
+  margin-bottom: 14px;
+}
+
+.home-page main section:nth-child(2) p {
+  margin-bottom: 10px;
+}
+
+.home-page main section:nth-child(2) a {
+  display: block;
+  padding: 14px 12px;
+  background: #d8e6fd;
+  color: #718098;
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.home-page main section:nth-child(2) a:hover,
+.home-page main section:nth-child(2) a:focus {
+  color: #2478dc;
+}
+
+.article-page header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding-top: 14px;
+}
+
+.article-page header p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: max(0px, calc(50% - 380px));
+  height: 74px;
+  margin: 0;
+  padding: 0 12px;
+  background: #8079d8;
+  color: white;
+  font-family: Oswald, "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.1;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.article-page header p a {
+  max-width: 100%;
+  text-decoration: none;
+}
+
+.article-page header p:hover,
+.article-page header p:focus-within {
+  background: white;
+  color: #8079d8;
+}
+
+.article-page h1 {
+  width: 72%;
+  margin: 0 auto;
+  padding: 0 0 16px;
+  border-bottom: 2px solid #7789a4;
+  color: #2478dc;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.article-page main {
+  max-width: 780px;
+  margin: 38px auto 56px;
+}
+
+.article-page main section {
+  margin-bottom: 38px;
+}
+
+.article-page main p {
+  margin-bottom: 22px;
+}
+
+.article-page main h2 {
+  margin-bottom: 14px;
+}
+
+.article-page blockquote {
+  max-width: 560px;
+  margin: 0 auto 34px;
+  padding: 16px 22px;
+  background: #d8e6fd;
+  color: #748197;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subcultures-page main section:nth-child(2) {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.memes-page main {
+  max-width: 760px;
+}
+
+.memes-page ul,
+.memes-page ol {
+  padding-left: 26px;
+}
+
+.memory-page main {
+  max-width: 760px;
+}
+
+footer {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  color: #778095;
+  font-size: 14px;
+}
+
+footer a {
+  color: #2478dc;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .home-page header,
+  .home-page main,
+  .article-page main,
+  footer {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .home-page header {
+    margin-top: 0;
+  }
+
+  .home-page header {
+    padding: 24px 20px;
+  }
+
+  .home-page main section:first-child {
+    margin-left: 0;
+  }
+
+  .home-page main section:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .article-page header {
+    height: auto;
+    min-height: 136px;
+    padding-top: 0;
+  }
+
+  .article-page header p {
+    display: flex;
+    position: static;
+    width: fit-content;
+    margin-bottom: 16px;
+  }
+
+  .article-page h1 {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 14px;
+    font-size: 28px;
+  }
+}
